@@ -1,0 +1,38 @@
+---
+title: "R Markdown Presentation & Plotly"
+date: "May 10th, 2021"
+output: html_document
+---
+
+```{r}
+library(plotly)
+```
+
+```{r}
+data(iris)
+#plot_ly(x= iris$Sepal.Width, y= iris$Sepal.Length, z = iris$Species, 
+#type = "scatter3d", mode = "markers", color = iris$Species)
+```
+
+```{r}
+head(iris)
+```
+
+```{r}
+plot_ly(x= iris$Petal.Width, y= iris$Petal.Length, z = iris$Species, 
+type = "scatter3d", mode = "markers", color = iris$Species)
+#put your mouse on the 3D picture and move your mouse, you can see the picture 
+#from different angles
+
+``` 
+
+
+
+
+
+
+
+
+
+
+
